@@ -9,13 +9,13 @@ typedef struct {
     int annee;
 } Tache;
 
-Tache L[MAX];
+  Tache L[MAX];
 
 void ajouter_tache() {
     static int i = 0;
 
     printf("Entrer la description: ");
-    scanf("%99s", L[i].description);
+    scanf("%s", L[i].description);
 
     printf("Entrer la priorite: ");
     scanf(" %c", &L[i].priorite); 
